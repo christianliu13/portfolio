@@ -2,42 +2,30 @@
   font-family: "lato", sans-serif;
 }
 
-.jumbotron {
-  color: white;
-  background: url(http://placekitten.com/1400/300);
-  background-size: cover;
-}
-
-#name {
-  color: #dd6E42;
-}
-
-#about,
-#portfolio,
-#contact {
+section {
   padding: 50px 0px;
 }
 
-#portfolio {
-  background-color: #145C9E;
+#about {
+  background-color:rgb(51, 51, 51);
   color: white;
+}
+
+#portfolio {
+  color: black;
+}
+
+.masonry-column {
+  padding: 0 1px;
+}
+
+.masonry-tile {
+  margin: 5px 1px;
 }
 
 #contact {
   background-color: #0B4F6C;
   color: white;
-}
-
-.card {
-  border: 20px;
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.card p,
-h5 {
-  color: black;
 }
 
 .navbar {
@@ -68,8 +56,7 @@ footer {
 }
 
 a:hover {
-  color: white;
-  background-color: #dd6E42;
+  color: #dd6E42;
 }
 
 h1 {
@@ -92,16 +79,15 @@ hr {
   border-radius: 3px;
 }
 
-
-
-
-
-
 /*// Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 320px) {
-  h1 {
-    text-align: center;
+  #name {
+    text-align: left;
+    font-size: 3rem;
+  }
+  #title {
+    font-size: 1.5rem;
   }
   hr {
     margin: 0 auto 20px auto;
@@ -110,38 +96,48 @@ hr {
   p {
     font-size: 18px;
   }
-
-  #about p{
+  #about p {
+    text-align: center;
+  }
+  h1 {
     text-align: center;
   }
 }
 
 
-
 /*// Medium devices (tablets, 768px and up)*/
 
-@media (min-width: 768px) {}
-
-
-
-/*// Large devices (desktops, 992px and up)*/
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  #name {
+    font-size: 5rem;
+  }
   h1 {
     text-align: left;
   }
-
   hr {
     width: 35%;
     margin-left: 0;
     margin-right: auto;
     margin-bottom: 50px;
   }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+
+  section{
+    padding:20px 0px;
+    text-align:left;
+  }
+  h1 {
+    text-align: left;
+  }
+
   p {
     font-size: 16px;
   }
-
-  #about p{
+  #about p {
     text-align: center;
   }
   .card {
@@ -149,9 +145,6 @@ hr {
   }
 }
 
-
-
 /*// Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
