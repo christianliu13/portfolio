@@ -1,6 +1,9 @@
 * {
   font-family: "lato", sans-serif;
 }
+#intro{
+  margin:2%;
+}
 
 section {
   padding: 50px 0px;
@@ -9,18 +12,27 @@ section {
 #about {
   background-color:rgb(51, 51, 51);
   color: white;
+  text-align: center;
 }
 
 #portfolio {
   color: black;
 }
 
-.masonry-column {
-  padding: 0 1px;
+#grid{
+  justify-content: center;
 }
 
-.masonry-tile {
-  margin: 5px 1px;
+.card{
+  margin:5px;
+  min-height: 100%;
+  color:black;
+}
+
+.card:hover{
+  opacity:.9;
+  background-color: orange;
+  transition: ease-in-out 0.4s;
 }
 
 #contact {
@@ -53,6 +65,15 @@ footer {
   border-radius: 0px;
   border-color: #dd6E42;
   color: white;
+}
+
+p{
+font-size: 1rem;;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 a:hover {
@@ -93,12 +114,7 @@ hr {
     margin: 0 auto 20px auto;
     width: 50%;
   }
-  p {
-    font-size: 18px;
-  }
-  #about p {
-    text-align: center;
-  }
+
   h1 {
     text-align: center;
   }
@@ -120,6 +136,12 @@ hr {
     margin-right: auto;
     margin-bottom: 50px;
   }
+  #grid{
+    justify-content: left;
+  }
+  #about{
+    text-align:left;
+  }
 }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -135,13 +157,7 @@ hr {
   }
 
   p {
-    font-size: 16px;
-  }
-  #about p {
-    text-align: center;
-  }
-  .card {
-    border: 30px;
+    font-size: 1.2rem;
   }
 }
 
