@@ -9,6 +9,7 @@ section {
   padding: 50px 0px;
 }
 
+
 #about {
   background-color:rgb(51, 51, 51);
   color: white;
@@ -27,6 +28,7 @@ section {
   margin:5px;
   min-height: 100%;
   color:black;
+  width:auto;
 }
 
 .card:hover{
@@ -141,6 +143,9 @@ hr {
   }
   #about{
     text-align:left;
+  }
+  .card{
+    width: 17rem;;
   }
 }
 

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <div id="background">
   <header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <span class="navbar-brand"></span>
@@ -40,6 +41,7 @@
       <h2 id="title">Front End Developer</h2>
     </div>
   </main>
+  </div>
   <section id="about">
     <div class="container">
       <h1>About Me</h1>
@@ -55,8 +57,8 @@
 
       <div id="grid" class="row">
         <a href="https://christianliu13.github.io/NailPalaceSCV/">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="http://placekitten.com/600/800/" alt="Nail Palace SCV">
+          <div class="card">
+            <img class="card-img-top" src="/images/NailPalaceSCV.png" alt="Nail Palace SCV">
             <div class="card-body">
               <h5 class="card-title">Nail Palace SCV</h5>
               <p class="card-text">A website for Nail Palace SCV done entirely in React.js</p>
@@ -64,8 +66,8 @@
           </div>
         </a>
         <a href="http://contegospa.com">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="http://placekitten.com/600/800/" alt="Contego Spa">
+          <div class="card">
+            <img class="card-img-top" src="/images/contego.png" alt="Contego Spa">
             <div class="card-body">
               <h5 class="card-title">Contego Spa Designs</h5>
               <p class="card-text">Made some cool sections for Contego Spa Designs in Redux</p>
@@ -73,7 +75,7 @@
           </div>
         </a>
         <a href="#landingPageModal" data-toggle="modal" data-target="#landingPageModal" role="dialog">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <img class="card-img-top" src="http://placekitten.com/600/800/" alt="Landing Page">
             <div class="card-body">
               <h5 class="card-title">Elegant Landing Page</h5>
@@ -81,14 +83,24 @@
             </div>
           </div>
         </a>
+        <a href="https://github.com/christianliu13">
+          <div class="card">
+            <img class="card-img-top" src="images/github-mark-1.png" alt="GitHub">
+            <div class="card-body">
+              <h5 class="card-title">More Projects</h5>
+              <p class="card-text">Check out my Github for more projects</p>
+            </div>
+          </div>
+        </a>
       </div>
+     
 
       <div class="modal fade" id="landingPageModal" tabindex="-1" aria-labelledby="bannerformmodal" aria-hidden="true" >
         <div class="modal-dialog">
           <div class="modal-content">
-
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body">
-              <img src="/landingPage.png" alt="Landing Page"/>
+              <img class="img img-fluid" src="/images/landingPage.png" alt="Landing Page"/>
             </div>
           </div>
         </div>
