@@ -8,17 +8,21 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <title>Christian Liu</title>
 </head>
 
 <body>
-  <div id="background">
   <header>
+    <div class="top-right">
+
+    </div>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <span class="navbar-brand"></span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -29,9 +33,11 @@
           <a class="nav-item nav-link" href="#about">About</a>
           <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
+          <a href="https://linkedin.com/in/christian-liu-1a2a9bb1/" class="nav-item nav-link">LinkedIn</a>
         </div>
       </div>
     </nav>
+
   </header>
   <main>
     <div id="intro" class="container">
@@ -41,12 +47,12 @@
       <h2 id="title">Front End Developer</h2>
     </div>
   </main>
-  </div>
   <section id="about">
     <div class="container">
       <h1>About Me</h1>
       <hr>
-      <p>I'm a front end developer with a passion for design. I love learning new things and working with people. On the side,
+      <p>I'm a front end developer with a passion for design. I love learning new things and working with people. On
+        the side,
         I'm an avid photographer, videographer, and artist.</p>
     </div>
   </section>
@@ -58,7 +64,7 @@
       <div id="grid" class="row">
         <a href="https://christianliu13.github.io/NailPalaceSCV/">
           <div class="card">
-            <img class="card-img-top" src="/images/NailPalaceSCV.png" alt="Nail Palace SCV">
+            <img class="card-img-top" src="images/NailPalaceSCV.png" alt="Nail Palace SCV">
             <div class="card-body">
               <h5 class="card-title">Nail Palace SCV</h5>
               <p class="card-text">A website for Nail Palace SCV done entirely in React.js</p>
@@ -67,7 +73,7 @@
         </a>
         <a href="http://contegospa.com">
           <div class="card">
-            <img class="card-img-top" src="/images/contego.png" alt="Contego Spa">
+            <img class="card-img-top" src="images/contego.png" alt="Contego Spa">
             <div class="card-body">
               <h5 class="card-title">Contego Spa Designs</h5>
               <p class="card-text">Made some cool sections for Contego Spa Designs in Redux</p>
@@ -93,14 +99,14 @@
           </div>
         </a>
       </div>
-     
 
-      <div class="modal fade" id="landingPageModal" tabindex="-1" aria-labelledby="bannerformmodal" aria-hidden="true" >
+
+      <div class="modal fade" id="landingPageModal" tabindex="-1" aria-labelledby="bannerformmodal" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
             <div class="modal-body">
-              <img class="img img-fluid" src="/images/landingPage.png" alt="Landing Page"/>
+              <img class="img img-fluid" src="/images/landingPage.png" alt="Landing Page" />
             </div>
           </div>
         </div>
@@ -125,7 +131,7 @@
           <label for="exampleFormControlTextarea1">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-        <button class="btn">Send</button>
+        <button id="send" class="btn">Send</button>
       </form>
     </div>
   </section>
