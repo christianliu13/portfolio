@@ -23,8 +23,9 @@ p {
     font-weight: 100;
     line-height: 25px;
 }
-a{
-    color:black;
+
+a {
+    color: black;
 }
 
 .container {
@@ -50,48 +51,73 @@ a{
 .nav-item {
     padding: 10px 20px;
     margin: 10px;
+}
+.nav-item, a {
     transition: .3s ease-in-out;
-    cursor: pointer;
-}
-.nav-item.contact{
-    border: 3px solid #52c1b2;
-    border-radius: 25px;
-}
-.nav-item.contact:hover{
-    background-color: #52c1b2;
-    color:white;
 }
 
-.nav-item:hover {
+.nav-item.contact {
+    border: 3px solid #52c1b2;
+    border-radius: 25px;
+    position: relative;
+}
+
+.nav-item.contact:after{
+    content:"Please contact me through LinkedIn!";
+    background-color: black;
+    color:white;
+    padding: 10px;
+    position: absolute;
+    width: 70px;
+    font-size: 10px;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.nav-item.contact:hover{
+    background-color: #52c1b2;
+}
+
+.nav-item.contact:hover a{
+    color: white;
+}
+.nav-item.contact:hover:after{
+    display: block;
+}
+
+.nav-item a:hover {
     color: #52cab2;
 }
 
 #hero {
     width: 400px;
-    min-height: 300px;
+    min-height: 200px;
     min-width: 300px;
     cursor: inherit;
+    height: auto;
     min-width: 300px;
 
 }
 
 #hero h1 {
     display: inline;
-    margin-bottom: 10px;
 }
 
 .square {
     flex: 1 1 auto;
     margin: 20px;
     overflow: hidden;
-    height: 300px;
+    height: auto;
     max-width: 50%;
     position: relative;
     cursor: pointer;
     animation: fade-in 1s ease-in;
+    max-height: 300px;
 }
 
-.my-link{
+.my-link {
     width: 40%;
 }
 
@@ -105,7 +131,7 @@ a{
 }
 
 .square img {
-    height: auto;
+    height: 100%;
     width: 100%;
     transition: 1s ease-out;
     object-fit: cover;
@@ -125,21 +151,51 @@ a{
     color: #52C1b2;
 }
 
-@keyframes fade-in{
+@keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
-@media screen and (max-width: 500px){
-    .container{
+@media screen and (max-width: 1024px) {
+    
+    .square {
+        flex: 1 1 33%;
+        max-width: 50%;
+        
+    }
+    #hero {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .square {
+        flex: 1 1 44%;
+        max-width: 100%;
+        
+    }
+    #hero {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
         justify-content: center;
     }
-    .square{
+
+    .square {
         max-width: 100%;
         max-height: 200px;
+    }
+    #hero{
+        max-height: 500px;
     }
 }
