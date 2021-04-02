@@ -18,7 +18,7 @@ h2 {
 }
 
 
-p {
+p,li {
     letter-spacing: 1px;
     font-weight: 100;
     line-height: 25px;
@@ -54,6 +54,7 @@ a {
 }
 .nav-item, a {
     transition: .3s ease-in-out;
+    text-decoration: none;
 }
 
 .nav-item.contact {
@@ -62,7 +63,7 @@ a {
     position: relative;
 }
 
-.nav-item.contact:after{
+/* .nav-item.contact:after{
     content:"Please contact me through LinkedIn!";
     background-color: black;
     color:white;
@@ -74,7 +75,7 @@ a {
     top: 20px;
     text-align: center;
     display: none;
-}
+} */
 
 .nav-item.contact:hover{
     background-color: #52c1b2;
@@ -113,21 +114,26 @@ a {
     max-width: 50%;
     position: relative;
     cursor: pointer;
-    animation: fade-in 1s ease-in;
+    animation: fade-in 1s ease-in-out;
     max-height: 300px;
 }
 
 .my-link {
     width: 40%;
+    background-color: #52c1b2;
+    color: white;
+    position: relative;
+    box-shadow: 4px 4px 20px rgba(128, 128, 128, 0.37);
 }
 
 .square .square-text {
     opacity: 0;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 20px;
+    left: 50px;
     z-index: 2;
     transition: .3s ease-in;
+    display: none;
 }
 
 .square img {
@@ -140,11 +146,12 @@ a {
 
 .square img:hover {
     transform: scale(1.05, 1.05);
-    opacity: .5;
+    opacity: .1;
 }
 
 .square:hover .square-text {
     opacity: 1;
+    display: block;
 }
 
 .teal {
